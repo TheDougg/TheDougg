@@ -3,29 +3,29 @@
     "X",
     " ",
     " ",
-    " ",
+    "O",
     "O",
     " ",
     " ",
     " ",
-    " "
+    "X"
   ],
   "placar": {
     "humanos": 2,
     "bot": 0,
     "empates": 2
   },
-  "jogadas": 19,
+  "jogadas": 20,
   "jogadores": {
     "TheDougg": 4,
     "SergioS0ares": 9
   },
   "historico": [
+    "22/10 12:15 — alguém ❌ casa 9 · bot ⭕ casa 4",
     "22/10 12:15 — alguém ❌ casa 1 · bot ⭕ casa 5",
     "22/10 12:15 — alguém ❌ casa 7",
     "22/10 12:14 — alguém ❌ casa 4 · bot ⭕ casa 6",
-    "22/10 12:14 — alguém ❌ casa 9 · bot ⭕ casa 1",
-    "22/10 12:14 — alguém ❌ casa 2 · bot ⭕ casa 8"
+    "22/10 12:14 — alguém ❌ casa 9 · bot ⭕ casa 1"
   ],
   "ultimo_jogo": {
     "resultado": "empate",
