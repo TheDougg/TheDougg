@@ -35,10 +35,12 @@ def cabecalho(tema):
     g1, g2 = (VIOLETA, CIANO) if tema == "dark" else ("#7c3aed", "#0891b2")
 
     def entra(atraso, conteudo):
-        return (f'<g opacity="0" transform="translate(0 12)">'
-                f'<animate attributeName="opacity" from="0" to="1" begin="{atraso}s" dur=".7s" fill="freeze"/>'
-                f'<animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="{atraso}s" '
-                f'dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>{conteudo}</g>')
+        # Sem animação o texto já aparece (opacidade base 1); com animação, entra subindo.
+        dur, k = atraso + .7, atraso / (atraso + .7)
+        return (f'<g><animate attributeName="opacity" values="0;0;1" keyTimes="0;{k:.3f};1" dur="{dur:.2f}s" fill="freeze"/>'
+                f'<animateTransform attributeName="transform" type="translate" values="0 12;0 12;0 0" '
+                f'keyTimes="0;{k:.3f};1" dur="{dur:.2f}s" fill="freeze" calcMode="spline" '
+                f'keySplines="0 0 1 1;.2 .8 .2 1"/>{conteudo}</g>')
 
     numeros = [("3", "produtos no ar"), ("3", "plugins open source"), ("TS · Py · Java", "no dia a dia")]
     stats, x = "", 48
