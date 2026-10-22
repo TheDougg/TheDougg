@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/terminal.svg" width="100%" alt="doug@github:~$ whoami → Douglas Henrique (Doug), dev full stack">
+<h1>Douglas Henrique</h1>
+
+<p>Dev full stack · TypeScript, React e Node.js · automação de processos com Camunda</p>
 
 <p>
   <a href="https://www.linkedin.com/in/douglas-henrique-04671a215/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>

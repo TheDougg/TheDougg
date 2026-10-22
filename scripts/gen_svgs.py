@@ -1,4 +1,5 @@
 """Gera os SVGs animados do perfil (assets/). Rode: python scripts/gen_svgs.py"""
+import base64
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -25,73 +26,6 @@ def gradiente_girando(gid, cores, dur=6):
     return (f'<linearGradient id="{gid}" gradientUnits="objectBoundingBox">{stops}'
             f'<animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5" '
             f'dur="{dur}s" repeatCount="indefinite"/></linearGradient>')
-
-
-# ---------------------------------------------------------------- terminal
-
-def terminal():
-    T = 20.0          # ciclo completo (s)
-    cw = 9.0          # largura aproximada de um caractere (px) a 15px
-    dt = 0.055        # tempo por caractere digitado
-    x0, y0, lh = 28, 78, 25
-    prompt = "doug@github:~$ "
-    roteiro = [
-        ("cmd", "whoami"),
-        ("out", [("Douglas Henrique", "#e6edf3", True), (" (Doug) · dev full stack · Brasil", "#8b949e", False)]),
-        ("cmd", "cat stack.txt"),
-        ("out", [("TypeScript · React · Node.js · Prisma · Python · Java · Camunda", "#67e8f9", False)]),
-        ("cmd", "ls ~/projetos"),
-        ("out", [("simulai-academy/   datalock/   dividiu/   camunda-plugins/", "#a78bfa", True)]),
-        ("cmd", "cat foco.txt"),
-        ("out", [("IA aplicada à educação · automação de processos · produto que vira negócio", "#e6edf3", False)]),
-        ("end", None),
-    ]
-
-    defs, corpo, t = [], [], 0.6
-    for i, (tipo, dado) in enumerate(roteiro):
-        y = y0 + i * lh
-        cid = f"c{i}"
-        if tipo == "cmd":
-            pts = [(0, 0), (t, len(prompt) * cw)]
-            t += 0.35
-            for k in range(1, len(dado) + 1):
-                pts.append((t, (len(prompt) + k) * cw))
-                t += dt
-            pts.append((t, 900))
-            t += 0.35
-        elif tipo == "out":
-            pts = [(0, 0), (t, 900)]
-            t += 0.9
-        else:
-            pts = [(0, 0), (t, 900)]
-        kt = ";".join(f"{p / T:.4f}" for p, _ in pts) + ";1"
-        vals = ";".join(f"{w:.0f}" for _, w in pts) + f";{pts[-1][1]:.0f}"
-        defs.append(f'<clipPath id="{cid}"><rect x="{x0 - 4}" y="{y - 18}" height="{lh}" width="0">'
-                    f'<animate attributeName="width" dur="{T}s" repeatCount="indefinite" calcMode="discrete" '
-                    f'keyTimes="{kt}" values="{vals}"/></rect></clipPath>')
-        if tipo in ("cmd", "end"):
-            cmd = escape(dado or "")
-            cursor = (f'<tspan fill="{CIANO}">▋<animate attributeName="fill-opacity" values="1;1;0;0" '
-                      f'keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/></tspan>') if tipo == "end" else ""
-            corpo.append(
-                f'<text x="{x0}" y="{y}" clip-path="url(#{cid})"><tspan fill="#3fb950" font-weight="700">doug@github</tspan>'
-                f'<tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan>'
-                f'<tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3">{cmd}</tspan>{cursor}</text>')
-        else:
-            spans = "".join(f'<tspan fill="{c}"{" font-weight=\"700\"" if b else ""}>{escape(s)}</tspan>' for s, c, b in dado)
-            corpo.append(f'<text x="{x0}" y="{y}" clip-path="url(#{cid})">{spans}</text>')
-
-    h = y0 + len(roteiro) * lh + 10
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 {h}" width="900" height="{h}" role="img" aria-label="Terminal: Douglas Henrique (Doug), dev full stack">
-<defs>{gradiente_girando("borda", [VIOLETA, CIANO, "#3fb950", VIOLETA], 8)}{"".join(defs)}</defs>
-<rect x="2" y="2" width="896" height="{h - 4}" rx="14" fill="#0d1117" stroke="url(#borda)" stroke-width="2"/>
-<rect x="3" y="3" width="894" height="36" rx="13" fill="#161b22"/>
-<rect x="3" y="26" width="894" height="13" fill="#161b22"/>
-<circle cx="26" cy="21" r="6" fill="#ff5f56"/><circle cx="46" cy="21" r="6" fill="#ffbd2e"/><circle cx="66" cy="21" r="6" fill="#27c93f"/>
-<text x="450" y="25" text-anchor="middle" font-family="{FONT_MONO}" font-size="13" fill="#8b949e">doug@github: ~ — zsh</text>
-<g font-family="{FONT_MONO}" font-size="15" xml:space="preserve">{"".join(corpo)}</g>
-</svg>'''
-    salvar("terminal.svg", svg)
 
 
 # ---------------------------------------------------------------- fluxo BPMN
@@ -165,6 +99,16 @@ def quebrar(texto, largura):
     return linhas + [atual]
 
 
+def icone(nome, titulo):
+    logo = ASSETS / "logos" / f"{nome}.png"
+    if logo.exists():
+        dados = base64.b64encode(logo.read_bytes()).decode()
+        return (f'<clipPath id="lg"><rect x="22" y="22" width="38" height="38" rx="10"/></clipPath>'
+                f'<image href="data:image/png;base64,{dados}" x="22" y="22" width="38" height="38" clip-path="url(#lg)"/>')
+    return (f'<rect x="22" y="22" width="38" height="38" rx="10" fill="url(#ic)"/>'
+            f'<text x="41" y="48" text-anchor="middle" font-size="19" font-weight="800" fill="#fff">{escape(titulo[0])}</text>')
+
+
 def card(nome, tema, titulo, tag, descricao, rodape, cores):
     c = TEMAS[tema]
     linhas = quebrar(descricao, 36)
@@ -175,8 +119,7 @@ def card(nome, tema, titulo, tag, descricao, rodape, cores):
 <linearGradient id="ic" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{cores[0]}"/><stop offset="1" stop-color="{cores[1]}"/></linearGradient></defs>
 <rect x="1.5" y="1.5" width="297" height="167" rx="16" fill="{c["bg"]}" stroke="url(#b)" stroke-width="2"/>
 <g font-family="{FONT_SANS}">
-<rect x="22" y="22" width="38" height="38" rx="10" fill="url(#ic)"/>
-<text x="41" y="48" text-anchor="middle" font-size="19" font-weight="800" fill="#fff">{escape(titulo[0])}</text>
+{icone(nome, titulo)}
 <text x="72" y="40" font-size="17" font-weight="700" fill="{c["texto"]}">{escape(titulo)}</text>
 <text x="72" y="58" font-size="11" font-weight="600" fill="{cores[0] if tema == "light" else cores[1]}" letter-spacing=".6">{escape(tag.upper())}</text>
 {desc}
@@ -235,7 +178,6 @@ def rodape():
 
 
 if __name__ == "__main__":
-    terminal()
     for tema in TEMAS:
         fluxo(tema)
         for args in CARDS:
