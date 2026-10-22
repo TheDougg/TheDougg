@@ -1,0 +1,43 @@
+name: Jogo da velha
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  jogar:
+    if: startsWith(github.event.issue.title, 'velha|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Várias pessoas podem jogar ao mesmo tempo: refaz a jogada sobre o main mais novo até o push passar.
+      - name: Jogar e salvar
+        id: jogo
+        env:
+          TITULO: ${{ github.event.issue.title }}
+          JOGADOR: ${{ github.event.issue.user.login }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/velha.py
+            if [ -z "$(git status --porcelain README.md data/velha.json)" ]; then break; fi
+            git add README.md data/velha.json
+            git commit -m "velha: @${JOGADOR} jogou (${TITULO#velha|})"
+            if git push origin HEAD:main; then break; fi
+            sleep $((RANDOM % 5 + 1))
+          done
+
+      - name: Responder e fechar a issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMERO" --body-file resposta.md
+          gh issue close "$NUMERO"
