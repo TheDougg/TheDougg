@@ -1,6 +1,6 @@
 {
   "tabuleiro": [
-    " ",
+    "O",
     "O",
     " ",
     " ",
@@ -8,18 +8,19 @@
     " ",
     " ",
     " ",
-    " "
+    "X"
   ],
   "placar": {
     "humanos": 0,
     "bot": 0,
     "empates": 0
   },
-  "jogadas": 1,
+  "jogadas": 2,
   "jogadores": {
-    "TheDougg": 1
+    "TheDougg": 2
   },
   "historico": [
+    "22/10 14:19 — @TheDougg ❌ casa 9 · bot ⭕ casa 1",
     "22/10 14:19 — @TheDougg ❌ casa 5 · bot ⭕ casa 2"
   ],
   "ultimo_jogo": null
