@@ -4,8 +4,8 @@
     " ",
     " ",
     " ",
-    "X",
-    "O",
+    " ",
+    " ",
     " ",
     " ",
     " "
@@ -15,12 +15,8 @@
     "bot": 0,
     "empates": 0
   },
-  "jogadas": 1,
-  "jogadores": {
-    "TheDougg": 1
-  },
-  "historico": [
-    "22/10 14:06 — @TheDougg ❌ casa 5 · bot ⭕ casa 6"
-  ],
+  "jogadas": 0,
+  "jogadores": {},
+  "historico": [],
   "ultimo_jogo": null
 }
