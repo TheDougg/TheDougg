@@ -1,28 +1,43 @@
 {
   "tabuleiro": [
-    "O",
-    "O",
-    "X",
-    "O",
-    "X",
     " ",
     " ",
     " ",
-    "X"
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
   ],
   "placar": {
-    "humanos": 0,
+    "humanos": 1,
     "bot": 0,
     "empates": 0
   },
-  "jogadas": 3,
+  "jogadas": 4,
   "jogadores": {
-    "TheDougg": 3
+    "TheDougg": 4
   },
   "historico": [
+    "22/10 14:21 — @TheDougg ❌ casa 6",
     "22/10 14:20 — @TheDougg ❌ casa 3 · bot ⭕ casa 4",
     "22/10 14:19 — @TheDougg ❌ casa 9 · bot ⭕ casa 1",
     "22/10 14:19 — @TheDougg ❌ casa 5 · bot ⭕ casa 2"
   ],
-  "ultimo_jogo": null
+  "ultimo_jogo": {
+    "resultado": "X",
+    "jogador": "TheDougg",
+    "tabuleiro": [
+      "O",
+      "O",
+      "X",
+      "O",
+      "X",
+      "X",
+      " ",
+      " ",
+      "X"
+    ]
+  }
 }
