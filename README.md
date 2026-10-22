@@ -1,9 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cabecalho-dark.svg">
-  <img src="assets/cabecalho-light.svg" width="100%" alt="Douglas Henrique · dev full stack. Crio produtos com IA e automatizo processos de negócio.">
-</picture>
+<img src="assets/cabecalho.svg" width="100%" alt="Douglas Henrique · dev full stack e segurança de dados. Crio produtos com IA, protejo dados e automatizo processos.">
 
 <p>
   <a href="https://www.linkedin.com/in/douglas-henrique-04671a215/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
@@ -22,6 +19,7 @@
 
 - Dev **full stack** em **TypeScript**: React + Vite + Tailwind no front, Node.js (Express/Fastify) + Prisma + Zod no back.
 - Coloco produto no ar do zero: **SimulAI Academy** (edtech com IA), **DataLock** (cibersegurança/LGPD) e **Dividiu** (rateio com Pix).
+- **Segurança de dados** desde o código: hash Argon2/bcrypt, 2FA + JWT, monitoramento de vazamentos, rate limit e validação com Zod.
 - Automação de processos com **Camunda** (BPMN/DMN), mais **Python** e **Java** no dia a dia.
 - Mantenho 3 plugins open source para o Camunda Modeler. Contato no [LinkedIn](https://www.linkedin.com/in/douglas-henrique-04671a215/).
 
@@ -49,7 +47,7 @@ Gosto de problema de negócio de verdade: processo manual que dá pra automatiza
 <summary><b>🇺🇸 English version</b></summary>
 <br>
 
-Hi, I'm **Douglas (Doug)**, a full stack developer from Brazil. I build products end to end in **TypeScript** (React, Vite, Tailwind, Node.js, Prisma), automate business processes with **Camunda** (BPMN/DMN), and use **Python** and **Java** where they fit.
+Hi, I'm **Douglas (Doug)**, a full stack developer from Brazil. I build products end to end in **TypeScript** (React, Vite, Tailwind, Node.js, Prisma), care a lot about **data security** (Argon2/bcrypt hashing, 2FA + JWT, breach monitoring, LGPD), automate business processes with **Camunda** (BPMN/DMN), and use **Python** and **Java** where they fit.
 
 What I've shipped:
 - **[SimulAI Academy](https://simulaiacademy.com)**: study with AI, not against it. Upload a PDF and get practice exams, mind maps and essay grading.
@@ -70,6 +68,12 @@ Scroll down and play tic-tac-toe against my bot. Every move is a GitHub issue.
   <a href="https://datalock.com.br"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/datalock-dark.svg"><img src="assets/cards/datalock-light.svg" width="270" alt="DataLock"></picture></a>
   <a href="https://dividiu.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/dividiu-dark.svg"><img src="assets/cards/dividiu-light.svg" width="270" alt="Dividiu"></picture></a>
 </p>
+
+## 🛡️ Segurança de dados
+
+<img src="assets/seguranca.svg" width="100%" alt="Checklist de segurança: senhas com Argon2/bcrypt, login com 2FA + JWT, monitoramento de vazamentos, cofre de senhas, varredura de arquivos, helmet/rate limit/Zod/DOMPurify, LGPD.">
+
+<p align="center"><sub>O que está de pé nos meus produtos hoje, puxado direto do código. · <i>What actually runs in my products today.</i></sub></p>
 
 ## 🧩 Open source · plugins para o Camunda Modeler
 
