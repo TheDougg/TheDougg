@@ -98,31 +98,31 @@ Scroll down and play tic-tac-toe against my bot. Every move is a GitHub issue.
 <p align="center"><b>Você é ❌. Clique numa casa vazia</b> → o GitHub abre uma issue → clique em <b>Create</b> → o bot responde ⭕ jogando perfeito (minimax): no máximo dá empate e o README se atualiza.<br>
 <sub>You're ❌. Click an empty square, hit <b>Create</b> on the issue, and the bot replies ⭕ in ~20s.</sub></p>
 
-<table align="center"><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td></tr><tr><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C6&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 6"></a></td></tr><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td></tr></table>
+<table align="center"><tr><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C1&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 1"></a></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C2&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 2"></a></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C3&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 3"></a></td></tr><tr><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C4&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 4"></a></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C5&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 5"></a></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C6&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 6"></a></td></tr><tr><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C7&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 7"></a></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C8&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 8"></a></td><td><a href="https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C9&body=S%C3%B3%20clicar%20em%20%2A%2ACreate%2A%2A%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20%2A%2ACreate%2A%2A%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README."><img src="assets/velha/vazio.svg" width="72" alt="casa 9"></a></td></tr></table>
 
 <p align="center">
 <img src="https://img.shields.io/badge/humanos-2-00c853?style=for-the-badge" alt="humanos">
-<img src="https://img.shields.io/badge/empates-0-30363d?style=for-the-badge" alt="empates">
+<img src="https://img.shields.io/badge/empates-1-30363d?style=for-the-badge" alt="empates">
 <img src="https://img.shields.io/badge/bot-0-22d3ee?style=for-the-badge" alt="bot">
 </p>
 
-<details><summary>Último jogo: @SergioS0ares venceu 🏆</summary>
+<details><summary>Último jogo: deu velha 🤝</summary>
 
-<table align="center"><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td></tr><tr><td><img src="assets/velha/vazio.svg" width="72" alt="vazia"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/vazio.svg" width="72" alt="vazia"></td></tr><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td></tr></table>
+<table align="center"><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td></tr><tr><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td></tr><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td></tr></table>
 
 </details>
 
 <details><summary>🏅 Quem mais jogou · últimas jogadas</summary>
 
-**Top jogadores:** [@SergioS0ares](https://github.com/SergioS0ares) (8) · [@TheDougg](https://github.com/TheDougg) (4)
+**Top jogadores:** [@SergioS0ares](https://github.com/SergioS0ares) (9) · [@TheDougg](https://github.com/TheDougg) (4)
 
+- 22/10 15:01 — @SergioS0ares ❌ casa 6
 - 22/10 15:01 — @SergioS0ares ❌ casa 7 · bot ⭕ casa 4
 - 22/10 15:00 — @SergioS0ares ❌ casa 2 · bot ⭕ casa 3
 - 22/10 14:59 — @SergioS0ares ❌ casa 9 · bot ⭕ casa 8
 - 22/10 14:59 — @SergioS0ares ❌ casa 1 · bot ⭕ casa 5
-- 22/10 14:49 — @SergioS0ares ❌ casa 7
 
-<sub>12 jogadas no total.</sub>
+<sub>13 jogadas no total.</sub>
 </details>
 <!-- VELHA:FIM -->
 
