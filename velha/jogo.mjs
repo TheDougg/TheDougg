@@ -16,7 +16,15 @@ export function vencedor(tab) {
 }
 
 // Nota para o bot (O): vitória rápida vale mais, derrota demorada perde menos.
+// Memoizado: cabe folgado nos 10 ms de CPU do plano grátis da Cloudflare.
+const memo = new Map();
 export function minimax(tab, vez, prof = 0) {
+  const chave = tab.join("") + vez + prof;
+  if (!memo.has(chave)) memo.set(chave, calcular(tab, vez, prof));
+  return memo.get(chave);
+}
+
+function calcular(tab, vez, prof) {
   const v = vencedor(tab);
   if (v === "O") return 10 - prof;
   if (v === "X") return prof - 10;

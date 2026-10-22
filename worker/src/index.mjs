@@ -92,7 +92,8 @@ function base64(conteudo) {
 
 async function visitas(env) {
   const total = Number((await env.VISITAS.get("total")) ?? 0) + 1;
-  await env.VISITAS.put("total", String(total));
+  // plano grátis: 1.000 gravações/dia no KV; passou disso, mostra o número sem contar
+  await env.VISITAS.put("total", String(total)).catch(() => {});
   const n = total.toLocaleString("pt-BR");
   const largura = 92 + n.length * 10;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${largura}" height="28" role="img" aria-label="visitas: ${n}">
