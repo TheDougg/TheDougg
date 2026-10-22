@@ -17,7 +17,6 @@ ESTADO = RAIZ / "data" / "velha.json"
 README = RAIZ / "README.md"
 RESPOSTA = RAIZ / "resposta.md"
 REPO = os.environ.get("GITHUB_REPOSITORY", "TheDougg/TheDougg")
-CHANCE_DE_ERRO = 1 / 6  # o bot é minimax, mas às vezes se distrai
 LINHAS = [(0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6)]
 INICIO, FIM = "<!-- VELHA:INICIO -->", "<!-- VELHA:FIM -->"
 
@@ -29,29 +28,32 @@ def vencedor(tab):
     return "empate" if " " not in tab else None
 
 
-def minimax(tab, vez):
+def minimax(tab, vez, prof=0):
+    """Nota do tabuleiro para o bot (O): vitória rápida vale mais, derrota demorada perde menos."""
     v = vencedor(tab)
     if v == "O":
-        return 1, None
+        return 10 - prof
     if v == "X":
-        return -1, None
+        return prof - 10
     if v == "empate":
-        return 0, None
-    melhor = (-2, None) if vez == "O" else (2, None)
-    for i in [i for i, c in enumerate(tab) if c == " "]:
+        return 0
+    notas = []
+    for i in (i for i, c in enumerate(tab) if c == " "):
         tab[i] = vez
-        nota, _ = minimax(tab, "X" if vez == "O" else "O")
+        notas.append(minimax(tab, "X" if vez == "O" else "O", prof + 1))
         tab[i] = " "
-        if (vez == "O" and nota > melhor[0]) or (vez == "X" and nota < melhor[0]):
-            melhor = (nota, i)
-    return melhor
+    return max(notas) if vez == "O" else min(notas)
 
 
 def jogada_do_bot(tab):
-    livres = [i for i, c in enumerate(tab) if c == " "]
-    if random.random() < CHANCE_DE_ERRO:
-        return random.choice(livres)
-    return minimax(tab, "O")[1]
+    """Jogo perfeito: entre as jogadas de nota máxima, sorteia uma para não ficar repetitivo."""
+    notas = {}
+    for i in (i for i, c in enumerate(tab) if c == " "):
+        tab[i] = "O"
+        notas[i] = minimax(tab, "X", 1)
+        tab[i] = " "
+    melhor = max(notas.values())
+    return random.choice([i for i, n in notas.items() if n == melhor])
 
 
 def novo_estado():
@@ -64,7 +66,7 @@ def encerrar(estado, resultado, jogador):
     estado["placar"][chave] += 1
     estado["ultimo_jogo"] = {"resultado": resultado, "jogador": jogador, "tabuleiro": estado["tabuleiro"]}
     estado["tabuleiro"] = [" "] * 9
-    return {"X": f"🏆 **@{jogador} venceu o bot!** Raríssimo. Seu nome entrou pro placar.",
+    return {"X": f"🏆 **@{jogador} venceu o bot!** Isso não devia ser possível. Me conta como foi.",
             "O": "🤖 O bot venceu essa. Um novo jogo já começou — tenta de novo?",
             "empate": "🤝 Deu velha! Empate. Um novo jogo já começou."}[resultado]
 
@@ -132,7 +134,7 @@ def bloco(estado):
         txt = {"X": f"@{u['jogador']} venceu 🏆", "O": "o bot venceu 🤖", "empate": "deu velha 🤝"}[u["resultado"]]
         ultimo = f"\n<details><summary>Último jogo: {txt}</summary>\n\n{tabuleiro_html(u['tabuleiro'], False)}\n\n</details>\n"
     return f"""{INICIO}
-<p align="center"><b>Você é ❌. Clique numa casa vazia</b> → o GitHub abre uma issue → clique em <b>Create</b> → o bot (minimax, que às vezes se distrai) responde ⭕ e o README se atualiza.<br>
+<p align="center"><b>Você é ❌. Clique numa casa vazia</b> → o GitHub abre uma issue → clique em <b>Create</b> → o bot responde ⭕ jogando perfeito (minimax): no máximo dá empate e o README se atualiza.<br>
 <sub>You're ❌. Click an empty square, hit <b>Create</b> on the issue, and the bot replies ⭕ in ~20s.</sub></p>
 
 {tabuleiro_html(estado["tabuleiro"], True)}
