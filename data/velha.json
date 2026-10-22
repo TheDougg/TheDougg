@@ -1,0 +1,22 @@
+{
+  "tabuleiro": [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+  ],
+  "placar": {
+    "humanos": 0,
+    "bot": 0,
+    "empates": 0
+  },
+  "jogadas": 0,
+  "jogadores": {},
+  "historico": [],
+  "ultimo_jogo": null
+}
