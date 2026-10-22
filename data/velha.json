@@ -7,25 +7,25 @@
     "O",
     " ",
     " ",
-    " ",
-    " "
+    "O",
+    "X"
   ],
   "placar": {
     "humanos": 2,
     "bot": 0,
     "empates": 0
   },
-  "jogadas": 9,
+  "jogadas": 10,
   "jogadores": {
     "TheDougg": 4,
-    "SergioS0ares": 5
+    "SergioS0ares": 6
   },
   "historico": [
+    "22/10 14:59 — @SergioS0ares ❌ casa 9 · bot ⭕ casa 8",
     "22/10 14:59 — @SergioS0ares ❌ casa 1 · bot ⭕ casa 5",
     "22/10 14:49 — @SergioS0ares ❌ casa 7",
     "22/10 14:48 — @SergioS0ares ❌ casa 8 · bot ⭕ casa 3",
-    "22/10 14:48 — @SergioS0ares ❌ casa 9 · bot ⭕ casa 2",
-    "22/10 14:47 — @SergioS0ares ❌ casa 1 · bot ⭕ casa 5"
+    "22/10 14:48 — @SergioS0ares ❌ casa 9 · bot ⭕ casa 2"
   ],
   "ultimo_jogo": {
     "resultado": "X",
