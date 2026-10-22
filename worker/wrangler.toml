@@ -1,0 +1,7 @@
+name = "velha-doug"
+main = "src/index.mjs"
+compatibility_date = "2025-09-01"
+
+[[kv_namespaces]]
+binding = "VISITAS"
+id = "06d2a5a56d914e44b83ad46c13ec43fe"

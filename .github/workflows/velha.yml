@@ -26,7 +26,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for tentativa in 1 2 3 4 5; do
             git fetch origin main && git reset --hard origin/main
-            python3 scripts/velha.py
+            node scripts/velha.mjs
             if [ -z "$(git status --porcelain README.md data/velha.json)" ]; then break; fi
             git add README.md data/velha.json
             git commit -m "velha: @${JOGADOR} jogou (${TITULO#velha|})"

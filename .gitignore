@@ -1,2 +1,5 @@
 resposta.md
 __pycache__/
+node_modules/
+.wrangler/
+worker/.dev.vars
