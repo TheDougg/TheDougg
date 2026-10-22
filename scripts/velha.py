@@ -138,7 +138,7 @@ def bloco(estado):
 {tabuleiro_html(estado["tabuleiro"], True)}
 
 <p align="center">
-<img src="https://img.shields.io/badge/humanos-{p['humanos']}-8b5cf6?style=for-the-badge" alt="humanos">
+<img src="https://img.shields.io/badge/humanos-{p['humanos']}-00c853?style=for-the-badge" alt="humanos">
 <img src="https://img.shields.io/badge/empates-{p['empates']}-30363d?style=for-the-badge" alt="empates">
 <img src="https://img.shields.io/badge/bot-{p['bot']}-22d3ee?style=for-the-badge" alt="bot">
 </p>
