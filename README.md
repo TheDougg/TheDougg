@@ -1,8 +1,9 @@
 <div align="center">
 
-<h1>Douglas Henrique</h1>
-
-<p>Dev full stack · TypeScript, React e Node.js · automação de processos com Camunda</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cabecalho-dark.svg">
+  <img src="assets/cabecalho-light.svg" width="100%" alt="Douglas Henrique · dev full stack. Crio produtos com IA e automatizo processos de negócio.">
+</picture>
 
 <p>
   <a href="https://www.linkedin.com/in/douglas-henrique-04671a215/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
