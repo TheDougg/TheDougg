@@ -2,8 +2,8 @@
   "tabuleiro": [
     "O",
     "O",
-    " ",
-    " ",
+    "X",
+    "O",
     "X",
     " ",
     " ",
@@ -15,11 +15,12 @@
     "bot": 0,
     "empates": 0
   },
-  "jogadas": 2,
+  "jogadas": 3,
   "jogadores": {
-    "TheDougg": 2
+    "TheDougg": 3
   },
   "historico": [
+    "22/10 14:20 — @TheDougg ❌ casa 3 · bot ⭕ casa 4",
     "22/10 14:19 — @TheDougg ❌ casa 9 · bot ⭕ casa 1",
     "22/10 14:19 — @TheDougg ❌ casa 5 · bot ⭕ casa 2"
   ],
