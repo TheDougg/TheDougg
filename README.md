@@ -142,13 +142,13 @@ Pelo clique a jogada é anônima. Para aparecer no ranking, jogue por uma issue 
   <a href="https://github.com/TheDougg?tab=overview"><img width="495" src="https://raw.githubusercontent.com/TheDougg/TheDougg/output/atividade.svg" alt="Total de contribuições, sequência atual e maior sequência, com data e hora da atualização em Brasília"></a>
 </p>
 
-<p align="center"><sub>Atualização automática a cada 4 horas. <a href="https://github.com/TheDougg/TheDougg/actions/workflows/snake.yml">Ver última execução</a>.</sub></p>
+<p align="center"><sub>Atualização automática de hora em hora. <a href="https://github.com/TheDougg/TheDougg/actions/workflows/snake.yml">Ver última execução</a>.</sub></p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TheDougg/TheDougg/output/snake-dark.svg?v=20261023">
-  <img src="https://raw.githubusercontent.com/TheDougg/TheDougg/output/snake-light.svg?v=20261023" width="100%" alt="Animação da cobrinha comendo o gráfico de contribuições; os quadrados reaparecem a cada volta">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TheDougg/TheDougg/output/snake-dark.svg?v=20261023-2">
+  <img src="https://raw.githubusercontent.com/TheDougg/TheDougg/output/snake-light.svg?v=20261023-2" width="100%" alt="Calendário real de contribuições dos últimos 12 meses, com os dias sempre visíveis e a cobrinha percorrendo o gráfico">
 </picture>
 
-<p align="center"><sub>A cobrinha come os quadrados e recomeça: o gráfico vazio no fim faz parte da animação. 🐍</sub></p>
+<p align="center"><sub>Cada quadrado representa um dia dos últimos 12 meses; as cores seguem a intensidade das contribuições no GitHub. A cobrinha passa sem apagar os dias. 🐍</sub></p>
 
 <img src="assets/rodape.svg" width="100%" alt="">
