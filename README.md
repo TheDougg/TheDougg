@@ -139,8 +139,10 @@ Pelo clique a jogada é anônima. Para aparecer no ranking, jogue por uma issue 
 ## 📈 Atividade
 
 <p align="center">
-  <img height="165" src="https://streak-stats.demolab.com?user=TheDougg&hide_border=true&background=00000000&ring=00ff41&fire=00ff41&currStreakLabel=00ff41&sideLabels=8b949e&currStreakNum=8b949e&sideNums=8b949e&dates=8b949e&stroke=30363d&locale=pt_BR" alt="sequência de contribuições">
+  <a href="https://github.com/TheDougg?tab=overview"><img width="495" src="https://raw.githubusercontent.com/TheDougg/TheDougg/output/atividade.svg" alt="Total de contribuições, sequência atual e maior sequência, com data e hora da atualização em Brasília"></a>
 </p>
+
+<p align="center"><sub>Atualização automática a cada 4 horas. <a href="https://github.com/TheDougg/TheDougg/actions/workflows/snake.yml">Ver última execução</a>.</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TheDougg/TheDougg/output/snake-dark.svg">

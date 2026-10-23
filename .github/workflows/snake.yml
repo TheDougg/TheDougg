@@ -1,12 +1,16 @@
-name: Cobrinha de contribuições
+name: Atividade e cobrinha de contribuições
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "17 */4 * * *"
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/snake.yml"]
+    paths: [".github/workflows/snake.yml", "scripts/atividade.py"]
+
+concurrency:
+  group: atividade-do-perfil
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -15,6 +19,11 @@ jobs:
   gerar:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Atualizar cartão de atividade
+        run: python3 scripts/atividade.py
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
