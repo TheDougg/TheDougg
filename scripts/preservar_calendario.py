@@ -31,7 +31,11 @@ def preservar(caminho):
     )
     raiz.insert(0, titulo)
     ET.register_namespace("", ns)
-    arvore.write(caminho, encoding="utf-8", xml_declaration=True)
+    # O gerador roda em Docker e cria arquivos de outro usuário. A pasta dist
+    # pertence ao runner: substituímos o arquivo sem alterar suas permissões.
+    temporario = caminho.with_suffix(".tmp")
+    arvore.write(temporario, encoding="utf-8", xml_declaration=True)
+    temporario.replace(caminho)
     print(f"{caminho}: {ativos} dias ativos; cores originais preservadas")
 
 
