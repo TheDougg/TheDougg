@@ -1,45 +1,45 @@
 {
   "tabuleiro": [
-    "X",
-    "X",
-    "O",
-    "O",
-    "O",
-    "X",
-    "X",
-    "O",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
     " "
   ],
   "placar": {
     "humanos": 2,
     "bot": 1,
-    "empates": 3
+    "empates": 4
   },
-  "jogadas": 30,
+  "jogadas": 31,
   "jogadores": {
     "TheDougg": 4,
     "SergioS0ares": 9
   },
   "historico": [
+    "30/10 10:15 — alguém ❌ casa 9",
     "30/10 10:14 — alguém ❌ casa 6 · bot ⭕ casa 8",
     "30/10 10:14 — alguém ❌ casa 7 · bot ⭕ casa 4",
     "30/10 10:14 — alguém ❌ casa 2 · bot ⭕ casa 3",
-    "28/10 09:20 — alguém ❌ casa 1 · bot ⭕ casa 5",
-    "28/10 09:19 — alguém ❌ casa 4 · bot ⭕ casa 6"
+    "28/10 09:20 — alguém ❌ casa 1 · bot ⭕ casa 5"
   ],
   "ultimo_jogo": {
-    "resultado": "O",
+    "resultado": "empate",
     "jogador": "alguém",
     "tabuleiro": [
       "X",
-      " ",
+      "X",
+      "O",
+      "O",
       "O",
       "X",
       "X",
       "O",
-      " ",
-      " ",
-      "O"
+      "X"
     ]
   }
 }
