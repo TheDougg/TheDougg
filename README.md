@@ -98,7 +98,7 @@ Scroll down and play tic-tac-toe against my bot. Every move is a GitHub issue.
 <p align="center"><b>Você é ❌. Clique numa casa vazia</b> e pronto: o bot responde ⭕ e o tabuleiro atualiza na hora.<br>
 <sub>O bot joga perfeito (minimax): o melhor que dá pra tirar dele é empate. · <i>You're ❌. Click a square; the bot plays perfectly.</i></sub></p>
 
-<table align="center"><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td></tr><tr><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=4"><img src="assets/velha/vazio.svg" width="72" alt="casa 4"></a></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=6"><img src="assets/velha/vazio.svg" width="72" alt="casa 6"></a></td></tr><tr><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=7"><img src="assets/velha/vazio.svg" width="72" alt="casa 7"></a></td><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=8"><img src="assets/velha/vazio.svg" width="72" alt="casa 8"></a></td><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=9"><img src="assets/velha/vazio.svg" width="72" alt="casa 9"></a></td></tr></table>
+<table align="center"><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td></tr><tr><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><img src="assets/velha/o.svg" width="72" alt="O"></td><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=6"><img src="assets/velha/vazio.svg" width="72" alt="casa 6"></a></td></tr><tr><td><img src="assets/velha/x.svg" width="72" alt="X"></td><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=8"><img src="assets/velha/vazio.svg" width="72" alt="casa 8"></a></td><td><a href="https://velha-doug.douglas123.workers.dev/jogar?casa=9"><img src="assets/velha/vazio.svg" width="72" alt="casa 9"></a></td></tr></table>
 
 <p align="center">
 <img src="https://img.shields.io/badge/humanos-2-00c853?style=for-the-badge" alt="humanos">
@@ -114,17 +114,17 @@ Scroll down and play tic-tac-toe against my bot. Every move is a GitHub issue.
 
 <details><summary>🏅 Jogar com meu @ (entra no ranking) · últimas jogadas</summary>
 
-Pelo clique a jogada é anônima. Para aparecer no ranking, jogue por uma issue escolhendo a casa: [4](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C4&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.) · [6](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C6&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.) · [7](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C7&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.) · [8](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C8&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.) · [9](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C9&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.)
+Pelo clique a jogada é anônima. Para aparecer no ranking, jogue por uma issue escolhendo a casa: [6](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C6&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.) · [8](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C8&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.) · [9](https://github.com/TheDougg/TheDougg/issues/new?title=velha%7C9&body=S%C3%B3%20clicar%20em%20**Create**%20%F0%9F%91%87%20%E2%80%94%20o%20bot%20joga%20em%20uns%2020%20segundos%20e%20atualiza%20o%20README.%0A%0AJust%20hit%20**Create**%20%E2%80%94%20the%20bot%20moves%20in%20~20s%20and%20updates%20the%20README.)
 
 **Top jogadores:** [@SergioS0ares](https://github.com/SergioS0ares) (9) · [@TheDougg](https://github.com/TheDougg) (4)
 
+- 30/10 10:14 — alguém ❌ casa 7 · bot ⭕ casa 4
 - 30/10 10:14 — alguém ❌ casa 2 · bot ⭕ casa 3
 - 28/10 09:20 — alguém ❌ casa 1 · bot ⭕ casa 5
 - 28/10 09:19 — alguém ❌ casa 4 · bot ⭕ casa 6
 - 22/10 14:39 — alguém ❌ casa 1 · bot ⭕ casa 3
-- 22/10 14:39 — alguém ❌ casa 5 · bot ⭕ casa 9
 
-<sub>28 jogadas no total.</sub>
+<sub>29 jogadas no total.</sub>
 </details>
 <!-- VELHA:FIM -->
 
