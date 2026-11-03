@@ -3,9 +3,9 @@
     "O",
     "O",
     "X",
-    " ",
     "X",
-    " ",
+    "X",
+    "O",
     "O",
     "X",
     " "
@@ -15,17 +15,17 @@
     "bot": 1,
     "empates": 5
   },
-  "jogadas": 39,
+  "jogadas": 40,
   "jogadores": {
     "TheDougg": 4,
     "SergioS0ares": 9
   },
   "historico": [
+    "03/11 17:40 — alguém ❌ casa 4 · bot ⭕ casa 6",
     "03/11 17:40 — alguém ❌ casa 3 · bot ⭕ casa 7",
     "03/11 17:40 — alguém ❌ casa 8 · bot ⭕ casa 2",
     "03/11 17:39 — alguém ❌ casa 5 · bot ⭕ casa 1",
-    "30/10 10:16 — alguém ❌ casa 3",
-    "30/10 10:16 — alguém ❌ casa 6 · bot ⭕ casa 4"
+    "30/10 10:16 — alguém ❌ casa 3"
   ],
   "ultimo_jogo": {
     "resultado": "empate",
