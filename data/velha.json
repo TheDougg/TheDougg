@@ -2,11 +2,11 @@
   "tabuleiro": [
     " ",
     " ",
-    " ",
+    "O",
     " ",
     "X",
     " ",
-    " ",
+    "X",
     " ",
     "O"
   ],
@@ -15,17 +15,17 @@
     "bot": 1,
     "empates": 6
   },
-  "jogadas": 42,
+  "jogadas": 43,
   "jogadores": {
     "TheDougg": 4,
     "SergioS0ares": 9
   },
   "historico": [
+    "12/11 16:59 — alguém ❌ casa 7 · bot ⭕ casa 3",
     "07/11 13:24 — alguém ❌ casa 5 · bot ⭕ casa 9",
     "03/11 17:40 — alguém ❌ casa 9",
     "03/11 17:40 — alguém ❌ casa 4 · bot ⭕ casa 6",
-    "03/11 17:40 — alguém ❌ casa 3 · bot ⭕ casa 7",
-    "03/11 17:40 — alguém ❌ casa 8 · bot ⭕ casa 2"
+    "03/11 17:40 — alguém ❌ casa 3 · bot ⭕ casa 7"
   ],
   "ultimo_jogo": {
     "resultado": "empate",
